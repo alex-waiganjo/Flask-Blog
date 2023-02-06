@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>welcome</h1>
+  {% for user in users %}
+  <h2> User Name : {{ user.name }}</h2>
+  <h2> Gender : {{ user.gender }}</h2>
+  <h2> Current Location: {{ user.location }}</h2>
+  {% endfor %}
+{% endblock %}  
