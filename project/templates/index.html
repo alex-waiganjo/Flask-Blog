@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
 {% block content %}
   <h1>welcome</h1>
-  {% for user in users %}
-  <h2> User Name : {{ user.name }}</h2>
-  <h2> Gender : {{ user.gender }}</h2>
-  <h2> Current Location: {{ user.location }}</h2>
+  {<h1>Hi, {{ current_user.username }}!</h1>
+  {% for post in posts %}
+  <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
   {% endfor %}
 {% endblock %}  
